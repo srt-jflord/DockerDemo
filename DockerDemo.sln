@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7E78AFC7-E805-493F-BE45-1677493DEEA3}"
 	ProjectSection(SolutionItems) = preProject
+		backend-service.yaml = backend-service.yaml
 		backend-webapi.yaml = backend-webapi.yaml
+		frontend-service.yaml = frontend-service.yaml
 		frontend-webapp.yaml = frontend-webapp.yaml
 		kubernetes script.docx = kubernetes script.docx
 	EndProjectSection

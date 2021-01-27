@@ -1,18 +1,3 @@
-kind: Service
-apiVersion: v1
-metadata:
-  name: demowebapp
-spec:
-  selector:
-    app: frontend
-    company: A
-  ports:
-    - protocol: "TCP"
-      port: 80
-      targetPort: 80
-  type: LoadBalancer
-  
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -33,7 +18,7 @@ spec:
     spec:
       containers:
         - name: demowebapp
-          image: "workshoprrp.azurecr.io/demo-webapp:latest"
+          image: "akstrainingreg.azurecr.io/demo-webapp:latest"
           imagePullPolicy: Always
           env:
             - name: ApiHost
@@ -42,4 +27,4 @@ spec:
             - name: http
               containerPort: 80
       imagePullSecrets:
-      - name: srcred
+      - name: regcred
